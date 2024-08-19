@@ -1,0 +1,75 @@
+.container {
+    text-align: center;
+    margin: 15% 25%;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: gradient-bg 10s ease infinite;
+}
+
+
+@keyframes gradient-bg {
+    0% {
+        background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    }
+    50% {
+        background: linear-gradient(45deg, #a1c4fd 0%, #c2e9fb 100%);
+    }
+    100% {
+        background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    }
+}
+
+body{
+    background-image: linear-gradient(black,gray);
+}
+.display input {
+    width: 80%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+@keyframes button-fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+button {
+    animation: button-fade 2s;
+}
+
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: #FF6347;
+}
